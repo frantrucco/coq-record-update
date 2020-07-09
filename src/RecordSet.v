@@ -1,4 +1,5 @@
 Set Implicit Arguments.
+Declare Scope record_set.
 
 (** Reader is the reader monad (or just the function monad). We only use
 Applicative here. *)
