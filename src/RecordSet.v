@@ -1,5 +1,4 @@
 Set Implicit Arguments.
-Declare Scope record_set.
 
 (** Reader is the reader monad (or just the function monad). We only use
 Applicative here. *)
@@ -109,6 +108,7 @@ Local Ltac SetterWfInstance_t :=
 Hint Extern 1 (Setter _) => SetterInstance_t : typeclass_instances.
 Hint Extern 1 (SetterWf _) => SetterWfInstance_t : typeclass_instances.
 
+Declare Scope record_set.
 Module RecordSetNotations.
   Delimit Scope record_set with rs.
   Open Scope rs.
